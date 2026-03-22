@@ -22,20 +22,20 @@ Die Vereinsprozesse des TSV Wartenberg werden schrittweise digitalisiert — nic
 ```
                     ┌──────────────────────────────┐
                     │     tsv-auth (User-Mgmt)     │
-                    │   OAuth2 / JWT Provider       │
+                    │   OAuth2 / JWT Provider      │
                     └──────────┬───────────────────┘
                                │ JWT
             ┌──────────────────┼──────────────────────┐
             │                  │                      │
    ┌────────▼────────┐  ┌─────▼──────────┐  ┌───────▼────────┐
-   │  tsv-dashboard   │  │  tsv-helferhub  │  │  tsv-hub       │
-   │  React SPA       │  │  Base44 App     │  │  FastAPI+React │
+   │  tsv-dashboard  │  │  tsv-helferhub │  │  tsv-hub       │
+   │  React SPA      │  │  Base44 App    │  │  FastAPI+React │
    └─────────────────┘  └────────────────┘  └────────────────┘
             │
-   ┌────────▼─────────┐
-   │  tsv-website      │
-   │  TYPO3            │
-   └──────────────────┘
+   ┌────────▼────────┐
+   │  tsv-website    │
+   │  TYPO3          │
+   └─────────────────┘
 ```
 
 ## Dokumentationsstruktur
