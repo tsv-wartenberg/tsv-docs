@@ -1,0 +1,78 @@
+name: "Bug Report"
+description: "Einen Fehler melden"
+title: "fix: "
+labels: ["fix"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: "Betroffene App"
+      description: "In welcher App tritt der Fehler auf?"
+      options:
+        - tsv-hub (Vereinsmanagement)
+        - tsv-auth (Benutzerverwaltung)
+        - tsv-dashboard (Zentrales Dashboard)
+        - tsv-helferhub (Base44 Helfer-App)
+        - tsv-website (TYPO3)
+        - Uebergreifend (mehrere Apps)
+    validations:
+      required: true
+
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: "Fehlerbeschreibung"
+      description: "Was passiert? Was sollte stattdessen passieren?"
+      placeholder: |
+        **Ist-Verhalten:** ...
+        **Soll-Verhalten:** ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduktion
+    attributes:
+      label: "Schritte zur Reproduktion"
+      description: "Wie kann der Fehler reproduziert werden?"
+      placeholder: |
+        1. Gehe zu ...
+        2. Klicke auf ...
+        3. Fehler tritt auf
+    validations:
+      required: true
+
+  - type: dropdown
+    id: schwere
+    attributes:
+      label: "Schweregrad"
+      options:
+        - Kritisch (App nicht nutzbar)
+        - Hoch (wichtige Funktion betroffen)
+        - Mittel (Workaround vorhanden)
+        - Niedrig (kosmetisch)
+    validations:
+      required: true
+
+  - type: textarea
+    id: kontext
+    attributes:
+      label: "Zusaetzlicher Kontext"
+      description: "Screenshots, Fehlermeldungen, Browser/OS, Logs."
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Anweisungen fuer Claude Code
+
+        Wenn du diesen Bug mit Claude Code behebst, folge diesem Ablauf:
+
+        1. **Repo auschecken**: `git checkout develop && git pull`
+        2. **Fix-Branch erstellen**: `git checkout -b fix/<kurzer-name>`
+        3. **Bug reproduzieren**: Verstehe das Problem — lies Logs, Tests, Code
+        4. **Ursache finden**: Systematic Debugging — nicht raten, sondern verifizieren
+        5. **Fix implementieren**: Minimaler Fix, kein Refactoring nebenbei
+        6. **Test schreiben**: Regressionstest der den Bug abdeckt
+        7. **Verify**: Alle Tests + Linting gruen
+        8. **Commit**: `fix: <beschreibung> (closes #ISSUE_NR)`
+        9. **PR erstellen**: `gh pr create --base develop`

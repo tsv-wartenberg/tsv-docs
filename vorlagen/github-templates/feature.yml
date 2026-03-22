@@ -1,0 +1,65 @@
+name: "Feature Request"
+description: "Neues Feature vorschlagen oder implementieren"
+title: "feat: "
+labels: ["feat"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: "Betroffene App"
+      description: "In welcher App soll das Feature implementiert werden?"
+      options:
+        - tsv-hub (Vereinsmanagement)
+        - tsv-auth (Benutzerverwaltung)
+        - tsv-dashboard (Zentrales Dashboard)
+        - tsv-helferhub (Base44 Helfer-App)
+        - tsv-website (TYPO3)
+        - tsv-docs (Dokumentation)
+        - Uebergreifend (mehrere Apps)
+    validations:
+      required: true
+
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: "Beschreibung"
+      description: "Was soll implementiert werden? Beschreibe das gewuenschte Verhalten."
+      placeholder: "Als [Rolle] moechte ich [Funktion], damit [Nutzen]."
+    validations:
+      required: true
+
+  - type: textarea
+    id: akzeptanzkriterien
+    attributes:
+      label: "Akzeptanzkriterien"
+      description: "Wann ist das Feature fertig? Liste konkrete Kriterien."
+      placeholder: |
+        - [ ] Endpunkt GET /api/v1/... liefert Daten
+        - [ ] Frontend zeigt die Daten an
+        - [ ] Tests vorhanden und gruen
+        - [ ] Dokumentation aktualisiert
+    validations:
+      required: true
+
+  - type: textarea
+    id: kontext
+    attributes:
+      label: "Zusaetzlicher Kontext"
+      description: "Screenshots, Mockups, Links, oder technische Details."
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Anweisungen fuer Claude Code
+
+        Wenn du dieses Issue mit Claude Code bearbeitest, folge diesem Ablauf:
+
+        1. **Repo auschecken**: `git checkout develop && git pull`
+        2. **Feature-Branch erstellen**: `git checkout -b feature/<kurzer-name>`
+        3. **Plan erstellen**: Nutze Plan Mode — recherchiere die Codebase, erstelle einen Plan, klaere Rueckfragen
+        4. **Implementieren**: Arbeite die Akzeptanzkriterien Schritt fuer Schritt ab (TaskCreate pro Schritt)
+        5. **Verify**: Nach jedem Schritt Tests + Linting pruefen
+        6. **Dokumentation**: CLAUDE.md und/oder API-Spec aktualisieren falls noetig
+        7. **Commit**: Conventional Commit mit `closes #ISSUE_NR`
+        8. **PR erstellen**: `gh pr create --base develop` mit Verweis auf dieses Issue

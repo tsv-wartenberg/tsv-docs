@@ -1,0 +1,64 @@
+name: "Aufgabe"
+description: "Allgemeine Aufgabe (Refactoring, Chore, Infrastruktur)"
+title: "chore: "
+labels: ["chore"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: "Betroffene App"
+      description: "Welche App ist betroffen?"
+      options:
+        - tsv-hub (Vereinsmanagement)
+        - tsv-auth (Benutzerverwaltung)
+        - tsv-dashboard (Zentrales Dashboard)
+        - tsv-helferhub (Base44 Helfer-App)
+        - tsv-website (TYPO3)
+        - tsv-docs (Dokumentation)
+        - Infrastruktur (Server, CI/CD, Docker)
+        - Uebergreifend (mehrere Apps)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: typ
+    attributes:
+      label: "Art der Aufgabe"
+      options:
+        - Refactoring
+        - Dependency-Update
+        - CI/CD
+        - Infrastruktur
+        - Dokumentation
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: "Beschreibung"
+      description: "Was soll gemacht werden und warum?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of Done"
+      placeholder: |
+        - [ ] Aenderung implementiert
+        - [ ] Tests gruen
+        - [ ] Dokumentation aktualisiert
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Anweisungen fuer Claude Code
+
+        1. **Branch erstellen**: `git checkout -b chore/<kurzer-name>` von `develop`
+        2. **Aufgabe umsetzen**: Plan erstellen falls komplex, sonst direkt implementieren
+        3. **Verify**: Tests + Linting + Build
+        4. **Commit**: `chore: <beschreibung> (closes #ISSUE_NR)`
+        5. **PR erstellen**: `gh pr create --base develop`
