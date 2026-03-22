@@ -6,7 +6,7 @@ TYPO3-Sitepackages fuer die offizielle Vereinswebsite tsv-wartenberg.de.
 
 | Feld | Wert |
 |------|------|
-| **Repo** | [github.com/ckoehler99/web_tsv_wartenberg_bootstrap](https://github.com/ckoehler99/web_tsv_wartenberg_bootstrap) |
+| **Repo** | [github.com/tsv-wartenberg/tsv-website](https://github.com/tsv-wartenberg/tsv-website) |
 | **Technologie** | TYPO3 v13 + Bootstrap Package v15 |
 | **Status** | Produktiv |
 | **URL** | [tsv-wartenberg.de](https://www.tsv-wartenberg.de) |

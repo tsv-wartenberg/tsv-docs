@@ -6,7 +6,7 @@ Modulare Webplattform fuer den TSV Wartenberg. Backend-API mit vier Fachmodulen 
 
 | Feld | Wert |
 |------|------|
-| **Repo** | [github.com/ckoehler99/tsv-hub](https://github.com/ckoehler99/tsv-hub) |
+| **Repo** | [github.com/tsv-wartenberg/tsv-hub](https://github.com/tsv-wartenberg/tsv-hub) |
 | **Technologie** | FastAPI + React + PostgreSQL |
 | **Status** | In Entwicklung (Phase 3 abgeschlossen) |
 | **Dev-URL** | https://tsv-hub-bucket.s3-website.fr-par.scw.cloud |

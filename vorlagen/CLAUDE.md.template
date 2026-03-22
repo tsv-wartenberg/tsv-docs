@@ -35,7 +35,7 @@ Jede Aufgabe wird nach diesem Ablauf bearbeitet:
 4. **Doku**: CLAUDE.md und relevante Docs aktualisieren
 5. **Commit**: Conventional Commit erstellen und pushen
 
-Ausfuehrliche Dokumentation: [tsv-docs/prozesse/claude-code-workflow.md](https://github.com/ckoehler99/tsv-docs/blob/main/prozesse/claude-code-workflow.md)
+Ausfuehrliche Dokumentation: [tsv-docs/prozesse/claude-code-workflow.md](https://github.com/tsv-wartenberg/tsv-docs/blob/main/prozesse/claude-code-workflow.md)
 
 ## Coding-Konventionen
 
@@ -55,7 +55,7 @@ Ausfuehrliche Dokumentation: [tsv-docs/prozesse/claude-code-workflow.md](https:/
 
 ```bash
 # Repository klonen
-git clone https://github.com/ckoehler99/tsv-{{name}}.git
+git clone https://github.com/tsv-wartenberg/tsv-{{name}}.git
 cd tsv-{{name}}
 
 # {{Setup-Schritte hier}}
@@ -70,4 +70,4 @@ Dieses Projekt ist Teil der TSV-Wartenberg-Multi-App-Architektur:
 - **tsv-dashboard**: Zentrales Dashboard
 - **tsv-website**: Vereinswebsite (TYPO3)
 
-Dokumentation: [github.com/ckoehler99/tsv-docs](https://github.com/ckoehler99/tsv-docs)
+Dokumentation: [github.com/tsv-wartenberg/tsv-docs](https://github.com/tsv-wartenberg/tsv-docs)

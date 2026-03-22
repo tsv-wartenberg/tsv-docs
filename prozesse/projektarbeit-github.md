@@ -65,7 +65,7 @@ gh issue view 42
 # Issue erstellen
 gh issue create --title "iCal-Export implementieren" \
   --body "Events als .ics-Datei exportieren" \
-  --label "feat" --assignee "ckoehler99"
+  --label "feat" --assignee "tsv-wartenberg"
 
 # Issue kommentieren (Fortschritt dokumentieren)
 gh issue comment 42 --body "Plan erstellt, starte Implementierung"

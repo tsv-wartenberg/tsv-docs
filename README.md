@@ -10,11 +10,11 @@ Die Vereinsprozesse des TSV Wartenberg werden schrittweise digitalisiert — nic
 
 | App | Beschreibung | Technologie | Repo | Status |
 |-----|-------------|-------------|------|--------|
-| **tsv-auth** | Zentrale Benutzerverwaltung, OAuth2/JWT Provider | FastAPI + PostgreSQL | [tsv-auth](https://github.com/ckoehler99/tsv-auth) | Geplant |
-| **tsv-hub** | Vereinsmanagement (Mitglieder, Events, Material, Buchungen) | FastAPI + React | [tsv-hub](https://github.com/ckoehler99/tsv-hub) | In Entwicklung |
+| **tsv-auth** | Zentrale Benutzerverwaltung, OAuth2/JWT Provider | FastAPI + PostgreSQL | [tsv-auth](https://github.com/tsv-wartenberg/tsv-auth) | Geplant |
+| **tsv-hub** | Vereinsmanagement (Mitglieder, Events, Material, Buchungen) | FastAPI + React | [tsv-hub](https://github.com/tsv-wartenberg/tsv-hub) | In Entwicklung |
 | **tsv-helferhub** | Helfer-App (Schichten, Anmeldungen) | Base44 | [helferhub.base44.app](https://helferhub.base44.app) | In Entwicklung |
 | **tsv-dashboard** | Zentrales Dashboard, aggregiert alle Apps | React | — | Geplant |
-| **tsv-website** | Vereinswebsite tsv-wartenberg.de | TYPO3 v13 | [tsv-website](https://github.com/ckoehler99/web_tsv_wartenberg_bootstrap) | Produktiv |
+| **tsv-website** | Vereinswebsite tsv-wartenberg.de | TYPO3 v13 | [tsv-website](https://github.com/tsv-wartenberg/tsv-website) | Produktiv |
 | **tsv-website-server** | TYPO3 Server-Konfiguration | Docker | — | Produktiv |
 
 ## Architekturdiagramm

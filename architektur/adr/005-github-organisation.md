@@ -6,7 +6,7 @@ Akzeptiert (2026-03-22)
 
 ## Kontext
 
-Die TSV-Repos liegen aktuell unter dem persoenlichen Account `github.com/ckoehler99`. Mit wachsender Anzahl an Repos und Entwicklern wird eine zentrale Organisation benoetigt.
+Die TSV-Repos liegen aktuell unter dem persoenlichen Account `github.com/tsv-wartenberg`. Mit wachsender Anzahl an Repos und Entwicklern wird eine zentrale Organisation benoetigt.
 
 ## Entscheidung
 

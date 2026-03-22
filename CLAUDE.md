@@ -77,4 +77,4 @@ Dieses Repo dokumentiert die TSV-Multi-App-Architektur:
 - **tsv-dashboard**: Zentrales Dashboard — geplant
 - **tsv-website**: Vereinswebsite (TYPO3)
 
-Alle Repos: [github.com/ckoehler99](https://github.com/ckoehler99?tab=repositories&q=tsv-)
+Alle Repos: [github.com/tsv-wartenberg](https://github.com/tsv-wartenberg?tab=repositories&q=tsv-)

@@ -6,7 +6,7 @@ Zentraler Identity Provider fuer alle TSV-Apps. Verwaltet User, Rollen und Spart
 
 | Feld | Wert |
 |------|------|
-| **Repo** | [github.com/ckoehler99/tsv-auth](https://github.com/ckoehler99/tsv-auth) |
+| **Repo** | [github.com/tsv-wartenberg/tsv-auth](https://github.com/tsv-wartenberg/tsv-auth) |
 | **Technologie** | FastAPI + PostgreSQL |
 | **Status** | Geplant |
 
