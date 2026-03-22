@@ -11,20 +11,20 @@
 ## Kommunikation zwischen Apps
 
 ```
-┌──────────┐     JWT        ┌──────────┐
+┌───────────┐     JWT       ┌───────────┐
 │  Client   │──────────────▶│ tsv-auth  │
 │ (Browser) │◀──────────────│           │
-└─────┬─────┘   Token       └──────────┘
+└─────┬─────┘   Token       └───────────┘
       │                          │
       │ Bearer Token             │ JWKS (Public Key)
       │                          │
       ▼                          ▼
-┌──────────┐              ┌──────────┐
-│ tsv-hub   │              │ tsv-xyz   │
-│           │              │           │
-│ Verifiziert JWT          │ Verifiziert JWT
-│ via JWKS                 │ via JWKS
-└──────────┘              └──────────┘
+┌─────────────────┐         ┌──────────────────┐
+│ tsv-hub         │         │ tsv-xyz          │
+│                 │         │                  │
+│ Verifiziert JWT │         │ Verifiziert JWT  │
+│ via JWKS        │         │ via JWKS         │
+└─────────────────┘         └──────────────────┘
 ```
 
 ### Ablauf
