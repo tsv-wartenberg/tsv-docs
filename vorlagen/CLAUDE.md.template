@@ -1,0 +1,73 @@
+# {{PROJEKTNAME}} — {{KURZBESCHREIBUNG}}
+
+## Projektuebersicht
+
+{{Beschreibung der App: Was sie tut, wer sie nutzt, warum sie existiert.}}
+
+**Domain:** {{URL falls vorhanden}}
+**Betreiber:** TSV Wartenberg e.V., 85456 Wartenberg, Bayern
+
+## Tech-Stack
+
+| Schicht | Technologie |
+|---------|-------------|
+| {{z.B. Backend}} | {{z.B. FastAPI 0.115+, Python 3.12+}} |
+| {{z.B. Frontend}} | {{z.B. React 19+, TypeScript, Vite}} |
+| {{z.B. Datenbank}} | {{z.B. PostgreSQL 16+}} |
+
+## Projektstruktur
+
+```
+tsv-{{name}}/
+├── {{Verzeichnisbaum hier}}
+```
+
+## Entwicklungsprozess
+
+Dieses Projekt folgt dem TSV-Standard-Workflow:
+
+**Plan → Todo → Verify → Doku → Commit**
+
+Jede Aufgabe wird nach diesem Ablauf bearbeitet:
+1. **Plan**: Anforderungen verstehen, Codebase recherchieren, Plan erstellen
+2. **Todo**: Aufgabe in kleine, testbare Schritte aufteilen (TaskCreate)
+3. **Verify**: Nach jedem Schritt Tests + Linting + Build pruefen
+4. **Doku**: CLAUDE.md und relevante Docs aktualisieren
+5. **Commit**: Conventional Commit erstellen und pushen
+
+Ausfuehrliche Dokumentation: [tsv-docs/prozesse/claude-code-workflow.md](https://github.com/ckoehler99/tsv-docs/blob/main/prozesse/claude-code-workflow.md)
+
+## Coding-Konventionen
+
+### {{Sprache 1, z.B. Python}}
+- {{Konventionen hier}}
+- Linting: ruff
+- Formatting: ruff format
+- Tests: pytest
+
+### Allgemein
+- Commit-Messages: Conventional Commits (feat:, fix:, docs:, chore:)
+- Branch-Strategie: main → develop → feature/xxx
+- UI-Texte: Deutsch, Code: Englisch
+- Niemals .env committen
+
+## Quickstart
+
+```bash
+# Repository klonen
+git clone https://github.com/ckoehler99/tsv-{{name}}.git
+cd tsv-{{name}}
+
+# {{Setup-Schritte hier}}
+```
+
+## Architektur-Kontext
+
+Dieses Projekt ist Teil der TSV-Wartenberg-Multi-App-Architektur:
+- **tsv-auth**: Zentrale Benutzerverwaltung (JWT/OAuth2)
+- **tsv-hub**: Vereinsmanagement (Mitglieder, Events, Material, Buchungen)
+- **tsv-helferhub**: Helfer-App (Base44)
+- **tsv-dashboard**: Zentrales Dashboard
+- **tsv-website**: Vereinswebsite (TYPO3)
+
+Dokumentation: [github.com/ckoehler99/tsv-docs](https://github.com/ckoehler99/tsv-docs)

@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npm ci)",
+      "Bash(npx *)",
+      "Bash(ruff format *)",
+      "Bash(ruff check *)",
+      "Bash(python -m pytest *)",
+      "Bash(python3 -m pytest *)",
+      "Bash(alembic *)",
+      "Bash(docker compose *)",
+      "Bash(gh pr *)",
+      "Bash(gh run *)",
+      "Bash(gh api *)",
+      "Bash(gh repo *)",
+      "Bash(git *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(mkdir *)",
+      "Bash(psql *)",
+      "Bash(pg_isready *)",
+      "WebSearch",
+      "WebFetch(domain:docs.base44.com)",
+      "WebFetch(domain:docs.scaleway.com)",
+      "WebFetch(domain:npmjs.com)"
+    ],
+    "deny": []
+  }
+}

@@ -46,6 +46,25 @@ Die Vereinsprozesse des TSV Wartenberg werden schrittweise digitalisiert — nic
 - [`konventionen/`](konventionen/) — Repo-Namen, Coding-Standards, API-Design
 - [`projekte/`](projekte/) — Status und Details pro App/Projekt
 
+## Entwicklung mit Claude Code
+
+Alle TSV-Projekte werden mit **Claude Code** (Anthropic CLI) entwickelt. Jedes Repo enthaelt:
+
+- `CLAUDE.md` — Projekt-Intelligence (wird automatisch von Claude geladen)
+- `.claude/settings.local.json` — Berechtigungen (lokal, nicht committet)
+
+### Standard-Workflow
+
+Jede Aufgabe folgt: **Plan → Todo → Verify → Doku → Commit**
+
+Ausfuehrliche Dokumentation: [`prozesse/claude-code-workflow.md`](prozesse/claude-code-workflow.md)
+
+### Vorlagen fuer neue Repos
+
+- [`vorlagen/CLAUDE.md.template`](vorlagen/CLAUDE.md.template) — CLAUDE.md Vorlage
+- [`vorlagen/claude-settings-template.json`](vorlagen/claude-settings-template.json) — Berechtigungen
+- [`vorlagen/gitignore-template`](vorlagen/gitignore-template) — .gitignore mit `.claude/` Ausschluss
+
 ## Infrastruktur
 
 | Umgebung | Anbieter | Zweck |
