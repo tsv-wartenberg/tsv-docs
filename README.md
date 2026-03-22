@@ -40,11 +40,12 @@ Die Vereinsprozesse des TSV Wartenberg werden schrittweise digitalisiert — nic
 
 ## Dokumentationsstruktur
 
-- [`architektur/`](architektur/) — Architekturuebersicht, ADRs, Auth-Konzept
+- [`architektur/`](architektur/) — Architekturuebersicht, ADRs, Auth-Konzept, Base44-Bewertung
 - [`infrastruktur/`](infrastruktur/) — Server, DNS, Hosting, Monitoring
-- [`prozesse/`](prozesse/) — Entwicklungs-Workflow, Deployment, Onboarding
+- [`prozesse/`](prozesse/) — Entwicklungs-Workflow, Claude Code, GitHub Issues/Projects
 - [`konventionen/`](konventionen/) — Repo-Namen, Coding-Standards, API-Design
 - [`projekte/`](projekte/) — Status und Details pro App/Projekt
+- [`vorlagen/`](vorlagen/) — CLAUDE.md Template, Settings, .gitignore
 
 ## Entwicklung mit Claude Code
 
@@ -64,6 +65,19 @@ Ausfuehrliche Dokumentation: [`prozesse/claude-code-workflow.md`](prozesse/claud
 - [`vorlagen/CLAUDE.md.template`](vorlagen/CLAUDE.md.template) — CLAUDE.md Vorlage
 - [`vorlagen/claude-settings-template.json`](vorlagen/claude-settings-template.json) — Berechtigungen
 - [`vorlagen/gitignore-template`](vorlagen/gitignore-template) — .gitignore mit `.claude/` Ausschluss
+
+## Projektarbeit mit GitHub
+
+Aufgaben werden ueber **GitHub Issues** verwaltet. Claude Code kann Issues direkt lesen und abarbeiten:
+
+```bash
+gh issue view 42          # Aufgabe lesen
+# → Claude erstellt Plan, implementiert, committet mit "closes #42"
+```
+
+**GitHub Projects** (Kanban-Board) dient als visuelle Uebersicht. Issues aus allen Repos werden einem zentralen Project zugeordnet.
+
+Ausfuehrliche Dokumentation: [`prozesse/projektarbeit-github.md`](prozesse/projektarbeit-github.md)
 
 ## Infrastruktur
 
